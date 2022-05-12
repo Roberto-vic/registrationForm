@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="register-form">
+            <form action="">
+            <div class="title"><h1>Patient Registration Form</h1></div>
+            <div class="info">
+            <label for=""> Name : 
+                <input type="text" placeholder="Name, Surname" required>
+            </label>
+            <br>
+            <label for=""> Email :
+                <input type="email" placeholder="Email" required>
+            </label>
+            <br>
+            <label for=""> Phone :
+                <input type="tel" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}">
+            </label>
+            <br>
+            <label for=""> Date :
+                <input type="date" required>
+            </label>
+            </div>
+            <div class="choose">
+            <select name="" id="gender">
+                <option value="choose"> -- Choose Gender -- </option>
+                <option value="male"> Male </option>
+                <option value="female"> Female </option>
+                <option value="other"> Other </option>
+            </select>
+            <select name="" id="specialist">
+                <option value="choose"> -- Choose specialist -- </option>
+                <option value="dentist"> Dentist </option>
+                <option value="cardio"> Cardiologist </option>
+                <option value="psych"> Psychiatrist </option>
+                <option value="ophtha"> Ophthalmologist </option>
+                <option value="neuro"> Neurologist </option>
+            </select>
+            <select name="" id="doctor">
+                <option value="choose"> -- Choose doctor -- </option>
+                <option value="ajay"> Dr. Ajay </option>
+                <option value="vijay"> Dr. Vijay </option>
+                <option value="prajay"> Dr. Prajay </option>
+                <option value="ujay"> Dr. Ujay </option>
+            </select>
+            </div>
+            <div class="question">
+                <p> Taking any medication, currently? </p>
+                <div>
+                <label for="yes">YES</label>
+                <input type="radio" name="answer" id="yes" value="Yes">
+                
+                </div>
+                <div>
+                <label for="no">NO</label>
+                <input type="radio" name="answer" id="no" value="No"> 
+                
+                </div>
+            </div>
+            <div class="queries">
+                <p> Ask any queries:</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
+            </div>
+            <a href="#"> BOOK NOW </a>
+            </form>
+            </div>
+        </div>
+        <footer style=" display: flex; align-items: baseline;">
+        <p>&copy Vicari </p>
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>
